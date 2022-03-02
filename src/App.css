@@ -18,7 +18,7 @@ body{
   background-color:#1a1a1a9f;
 }
 
-.boxes-weather{display:flex; text-align: center;}
+.boxes-weather{display:flex; text-align: center;justify-content: center;}
 
 @media(max-width:992px){
   .weather-row{
@@ -30,11 +30,18 @@ body{
     flex-wrap:wrap;
   }
   .box-weather{
-    margin:1rem 0;
+    margin:0.5rem 0;
+  }
+  .box-weather p{
+    margin: 0.25rem 0;
   }
 }
 
-.box-weather{display:flex; flex-direction: column; justify-content: center; align-items:center}
+.box-weather{display:flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items:center;}
+
 
 .tempc{
   display:flex;
