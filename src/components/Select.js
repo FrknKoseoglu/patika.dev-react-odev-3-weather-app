@@ -11,11 +11,10 @@ function Select() {
 
   function selectChange(e) {
     let findCity = {};
-    if (e) {
-      findCity = data.city.find((x) => x.plate === e.target.value);
-    } else {
-      findCity = { lat: "37", long: "35.321333" };
-    }
+    e
+      ? (findCity = data.city.find((x) => x.plate === e.target.value))
+      : (findCity = { lat: "37", long: "35.321333" });
+
     axios(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${findCity.lat}&lon=${findCity.long}&units=metric&lang=tr&appid=${data?.apiKey}`
     ).then((res) => {
