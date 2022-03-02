@@ -5,10 +5,6 @@ import WeatherContext from "../context/WeatherContext";
 function Select() {
   const data = useContext(WeatherContext);
 
-  useEffect(() => {
-    selectChange();
-  }, []);
-
   function selectChange(e) {
     let findCity = {};
     e
