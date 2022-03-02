@@ -15,6 +15,7 @@ function Weather() {
     axios(
       `https://gist.githubusercontent.com/FrknKoseoglu/dcbbb12e27d5e16ae4b2f864b9c2ae41/raw/1218ea96c54db789e1fed11958ee2fb7d47a4651/turkiye_il_koordinat_listesi_JSON.json`
     ).then((res) => data?.setCity(res.data));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
