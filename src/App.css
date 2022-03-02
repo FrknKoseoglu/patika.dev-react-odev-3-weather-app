@@ -20,6 +20,20 @@ body{
 
 .boxes-weather{display:flex; text-align: center;}
 
+@media(max-width:992px){
+  .weather-row{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxes-weather{
+    flex-wrap:wrap;
+  }
+  .box-weather{
+    margin:1rem 0;
+  }
+}
+
 .box-weather{display:flex; flex-direction: column; justify-content: center; align-items:center}
 
 .tempc{

@@ -1,9 +1,14 @@
-import { useContext } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useContext } from "react";
 import axios from "axios";
 import WeatherContext from "../context/WeatherContext";
 
 function Select() {
   const data = useContext(WeatherContext);
+
+  useEffect(() => {
+    selectChange();
+  }, []);
 
   function selectChange(e) {
     let findCity = {};
