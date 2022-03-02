@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import axios from "axios";
 import WeatherContext from "../context/WeatherContext";
 
